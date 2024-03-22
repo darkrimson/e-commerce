@@ -1,0 +1,96 @@
+.hero {
+  height: 990px;
+  padding: 0 70px 70px 70px;
+
+  @include desktop {
+    height: 100vh;
+    padding: 0 15px 30px 15px;
+  }
+
+  @include mobile {
+    height: 450px;
+  }
+
+  &__inner {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+  }
+
+  &__content {
+    height: 95.5%;
+    padding-left: 52px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+
+    &-title {
+      @include fluid-text(50, 35);
+
+      margin-bottom: 20px;
+
+      @include mobile {
+        margin-bottom: 15px
+      }
+    }
+
+    &-description {
+      @include fluid-text(18, 16);
+
+      margin-bottom: 38px;
+
+      @include mobile {
+        margin-bottom: 20px
+      }
+    }
+
+    &-button {
+      margin-bottom: 84px;
+
+      @include mobile {
+        padding-inline: 20px;
+        margin-bottom: 20px
+      }
+    }
+  }
+
+  .progress-bar {
+    position: relative;
+    &__left::after {
+      content: "";
+      position: absolute;
+      width: 36%;
+      height: 2px;
+      background-color: #020202;
+    }
+
+    &__right::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      width: 64%;
+      height: 2px;
+      background-color: #aaa;
+    }
+  }
+
+  &__button-left {
+    @include reset-button;
+
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__button-right {
+    @include reset-button;
+
+    right: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/css/styles.min.css" />
+    <title>E-commerce</title>
+  </head>
+  <body>
+    <div class="image-bg-blocks">
+      <header class="header">
+        <div class="header__inner">
+          <a href="#" class="header__logo">
+            <img
+              src="./images/logo.svg"
+              alt="logo"
+              loading="lazy"
+              width="92"
+              height="18"
+            />
+          </a>
+          <nav class="header__nav">
+            <ul class="header__list hidden-mobile">
+              <li class="header__item">
+                <a href="#" class="header__link">Home</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Pages</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Shop</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Portfolio</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Blog</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="buttons-menu hidden-mobile">
+            <button class="buttons-menu__search">
+              <span>Search</span>
+              <img
+                src="./images/search.svg"
+                alt="Search"
+                width="15"
+                height="15"
+              />
+            </button>
+            <a href="" class="buttons-menu__cards">
+              <span>Cards</span>
+              <img
+                src="./images/cards.svg"
+                alt="Cards"
+                width="13"
+                height="18"
+              />
+              <span>0</span>
+            </a>
+            <a href="" class="buttons-menu__favorites">
+              <span class="visually-hidden">Favorites</span>
+              <img
+                src="./images/favorits.svg"
+                alt="Favorits"
+                width="15"
+                height="18"
+              />
+              <span>0</span>
+            </a>
+            <a href="" class="buttons-menu__account">
+              <span class="visually-hidden">Account</span>
+              <img
+                src="./images/account.svg"
+                alt="Account"
+                width="15"
+                height="15"
+              />
+            </a>
+          </div>
+          <button 
+          class="button__burger-menu burger-button visible-mobile"
+          onclick="mobileOverlay.showModal()"
+          type="button"
+        >
+          <span class="visually-hidden">Open menu</span>
+        </button>
+        </div>
+      </header>
+      <div class="hero">
+        <div class="hero__inner">
+          <button class="hero__button-left">
+            <span class="visually-hidden">Previous</span>
+            <svg width="16" height="29" viewBox="0 0 16 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.1768 0.357544L1.17383 14.375L15.1768 28.3934" stroke="black" stroke-width="0.999675"/>
+              </svg>              
+          </button>
+          <button class="hero__button-right">
+            <span class="visually-hidden">Next</span>
+            <svg width="16" height="29" viewBox="0 0 16 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.821318 0.357544L14.8243 14.375L0.820312 28.3934" stroke="black" stroke-width="0.999675"/>
+              </svg>              
+          </button>
+          <div class="hero__content">
+            <h1 class="h1 hero__content-title">
+              Mixed Textiles
+            </h1>
+            <div class="hero__content-description">
+              Lorem ipsum dolor sit amet, consectetur<br/>  adipiscing elit, sed do eiusmod.
+            </div>
+            <button class="hero__content-button button">
+              SHOP COLLECTION
+            </button>
+          </div>
+          <div class="progress-bar">
+            <span class="progress-bar__left"></span>
+            <span class="progress-bar__right"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+      <form class="mobile-overlay__close-button-wrapper" method="dialog">
+        <button
+          class="mobile-overlay__close-button cross-button"
+          onclick="mobileOverlay.close()"
+          type="submit"
+        >
+          <span class="visually-hidden">Close menu</span>
+        </button>
+      </form>
+      <div class="mobile-overlay__body">
+        <ul class="mobile-overlay__list">
+          <li class="mobile__overlay-item">
+            <a href="#" class="mobile-overlay-link">Home</a>
+          </li>
+          <li class="mobile__overlay-item">
+            <a href="#" class="mobile-overlay-link">Pages</a>
+          </li>
+          <li class="mobile__overlay-item">
+            <a href="#" class="mobile-overlay-link">Shop</a>
+          </li>
+          <li class="mobile__overlay-item">
+            <a href="#" class="mobile-overlay-link">Portfolio</a>
+          </li>
+          <li class="mobile__overlay-item">
+            <a href="#" class="mobile-overlay-link">Blog</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-overlay__list">
+          <li class="mobile__overlay-item">
+            <a href="#" class="mobile-overlay-link">Search</a>
+          </li>
+          <li class="mobile__overlay-item">
+            <a href="#" class="mobile-overlay-link">Cards</a>
+          </li>
+          <li class="mobile__overlay-item">
+            <a href="#" class="mobile-overlay-link">Favorites</a>
+          </li>
+          <li class="mobile__overlay-item">
+            <a href="#" class="mobile-overlay-link">Account</a>
+          </li>
+        </ul>
+      </div>
+    </dialog>
+  </body>
+</html>

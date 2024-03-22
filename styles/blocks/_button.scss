@@ -1,0 +1,18 @@
+.button {
+  @include flex-center(true);
+  @include reset-button;
+
+  height: 41px;
+  padding-inline: 50px;
+  border: var(--border);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 142%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  @include hover {
+    color: var(--color-light);
+    background: var(--color-dark);
+  }
+}
