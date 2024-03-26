@@ -1,0 +1,78 @@
+.gender {
+  width: 100%;
+  margin-bottom: 170px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__man,
+  &__woman {
+    position: relative;
+  }
+
+  &__image {
+
+    width: 100%;
+    height: auto;
+
+    border-top: var(--border);
+    border-bottom: var(--border);
+
+    &:first-child {
+      border-right: var(--border);
+    }
+
+    @include tablet {
+        border-left: var(--border);
+    }
+  }
+
+  &__content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+
+    .gender__title {
+      @include fluid-text(50, 40);
+      font-weight: 400;
+
+      margin-bottom: 34px;
+    }
+
+    .gender__link {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 142%;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      white-space: nowrap;
+
+      border: var(--border);
+
+      @include desktop {
+
+      }
+    }
+
+    &--man {
+      @include abs-center;
+
+      
+    }
+
+    &--woman {
+        @include abs-center;
+
+        
+    }
+  }
+}

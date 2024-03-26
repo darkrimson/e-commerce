@@ -751,4 +751,69 @@ select {
   position: absolute;
   pointer-events: none;
   border-color: #fff;
+}
+
+.gender {
+  width: 100%;
+  margin-bottom: 170px;
+}
+.gender__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 1023px) {
+  .gender__container {
+    flex-direction: column;
+  }
+}
+.gender__man, .gender__woman {
+  position: relative;
+}
+.gender__image {
+  width: 100%;
+  height: auto;
+  border-top: var(--border);
+  border-bottom: var(--border);
+}
+.gender__image:first-child {
+  border-right: var(--border);
+}
+@media (max-width: 1023px) {
+  .gender__image {
+    border-left: var(--border);
+  }
+}
+.gender__content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+}
+.gender__content .gender__title {
+  font-size: clamp(40px, 3.4722222222vw, 50px);
+  font-weight: 400;
+  margin-bottom: 34px;
+}
+.gender__content .gender__link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 142%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  border: var(--border);
+}
+.gender__content--man {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+.gender__content--woman {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
 }/*# sourceMappingURL=styles.css.map */
