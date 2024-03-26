@@ -14,11 +14,20 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 144px;
+
+    @include tablet {
+      margin-bottom: 70px;
+    }
+
+    @include mobile {
+      margin-bottom: 30px;
+    }
   }
 
   &__description {
+    @include fluid-text(29, 20);
+
     max-width: 979px;
-    font-size: 29px;
     line-height: 134%;
     text-align: center;
   }

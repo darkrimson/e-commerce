@@ -74,22 +74,4 @@
       background-color: #aaa;
     }
   }
-
-  &__button-left {
-    @include reset-button;
-
-    left: 0;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  &__button-right {
-    @include reset-button;
-
-    right: 0;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
 }

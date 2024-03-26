@@ -1,0 +1,17 @@
+.arrow-left {
+    @include reset-button;
+
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+.arrow-right {
+    @include reset-button;
+
+    right: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
