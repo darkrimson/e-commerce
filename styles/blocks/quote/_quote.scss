@@ -1,6 +1,8 @@
 .quote {
   width: 100%;
   padding-inline: 122px;
+  margin-bottom: 156px;
+
 
   @include desktop {
     padding-inline: 50px;
@@ -8,10 +10,12 @@
 
   @include tablet {
     padding-inline: 30px;
+    margin-bottom: 80px;
   }
 
   @include mobile {
     padding-inline: 15px;
+    margin-bottom: 30px;
   }
 
   &__container {

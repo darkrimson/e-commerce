@@ -1,0 +1,62 @@
+.collaboration {
+  width: 100%;
+  padding-inline: 141px;
+
+  @include desktop {
+    padding-inline: 100px;
+  }
+
+  @include tablet {
+    padding-inline: 50px;
+  }
+
+  @include mobile {
+    padding-inline: 30px;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__content {
+    @include abs-center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    column-gap: 13px;
+
+    & h2 {
+      @include fluid-text(60, 30);
+
+      margin: 0;
+      line-height: 137%;
+      text-transform: uppercase;
+      color: var(--color-light);
+      white-space: nowrap;
+    }
+  }
+
+  &__link {
+    @include fluid-text(12, 10);
+
+    font-weight: 600;
+    line-height: 142%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: var(--color-light);
+  }
+}

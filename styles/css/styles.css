@@ -848,6 +848,7 @@ select {
 .quote {
   width: 100%;
   padding-inline: 122px;
+  margin-bottom: 156px;
 }
 @media (max-width: 1280px) {
   .quote {
@@ -857,11 +858,13 @@ select {
 @media (max-width: 1023px) {
   .quote {
     padding-inline: 30px;
+    margin-bottom: 80px;
   }
 }
 @media (max-width: 767px) {
   .quote {
     padding-inline: 15px;
+    margin-bottom: 30px;
   }
 }
 .quote__container {
@@ -912,4 +915,65 @@ select {
   align-items: center;
   -moz-column-gap: 0px;
        column-gap: 0px;
+}
+
+.collaboration {
+  width: 100%;
+  padding-inline: 141px;
+}
+@media (max-width: 1280px) {
+  .collaboration {
+    padding-inline: 100px;
+  }
+}
+@media (max-width: 1023px) {
+  .collaboration {
+    padding-inline: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .collaboration {
+    padding-inline: 30px;
+  }
+}
+.collaboration__container {
+  position: relative;
+}
+.collaboration__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.collaboration__image {
+  width: 100%;
+  height: auto;
+}
+.collaboration__title {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 13px;
+       column-gap: 13px;
+}
+.collaboration__title h2 {
+  font-size: clamp(30px, 4.1666666667vw, 60px);
+  margin: 0;
+  line-height: 137%;
+  text-transform: uppercase;
+  color: var(--color-light);
+  white-space: nowrap;
+}
+.collaboration__link {
+  font-size: clamp(10px, 0.8333333333vw, 12px);
+  font-weight: 600;
+  line-height: 142%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  color: var(--color-light);
 }/*# sourceMappingURL=styles.css.map */
