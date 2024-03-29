@@ -1,13 +1,16 @@
 .collaboration {
   width: 100%;
   padding-inline: 141px;
+  margin-bottom: 134px;
 
   @include desktop {
     padding-inline: 100px;
+    margin-bottom: 80px;
   }
 
   @include tablet {
     padding-inline: 50px;
+    margin-bottom: 60px;
   }
 
   @include mobile {

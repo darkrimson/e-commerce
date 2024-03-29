@@ -10,12 +10,11 @@
 
   @include tablet {
     padding-inline: 30px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
 
   @include mobile {
     padding-inline: 15px;
-    margin-bottom: 30px;
   }
 
   &__container {
@@ -35,10 +34,16 @@
 
   &__quote-icon {
     margin-bottom: 35px;
+
+    @include mobile {
+      margin-bottom: 20px;
+      width: 25px;
+      aspect-ratio: 1;
+    }
   }
 
   &__description {
-    @include fluid-text(40, 28);
+    @include fluid-text(40, 20);
 
     max-width: 897px;
     margin-bottom: 62px;
@@ -69,5 +74,13 @@
     display: flex;
     align-items: center;
     column-gap: 0px;
+
+    @include mobile {
+      & img {
+        width: 150px;
+        aspect-ratio: 1;
+      }
+      
+    }
   }
 }
