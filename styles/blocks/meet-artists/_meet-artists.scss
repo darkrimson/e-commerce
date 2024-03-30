@@ -1,0 +1,85 @@
+.meet-artists {
+  margin-bottom: 100px;
+
+  @include desktop {
+    padding-inline: 90px;
+
+    &__image:first-child {
+        display: none;
+    }
+  }
+
+  @include tablet {
+    padding-inline: 50px;
+  }
+
+  @include mobile {
+    padding-inline: 0;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__image {
+    max-width: 90%;
+    height: auto;
+    margin-right: 126px;
+
+    @include desktop {
+        margin-right: 90px;
+    }
+
+    @include tablet {
+        margin-right: 50px;
+    }
+
+    @include mobile {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+  }
+
+  &__image:first-child {
+    margin-right: 40px;
+  }
+
+  &__content {
+    max-width: 360px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+  }
+
+  &__title {
+    @include fluid-text(35, 20);
+    line-height: 120%;
+    margin-bottom: 30px;
+
+    @include mobile {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__description {
+    @include fluid-text(18, 16);
+    margin-bottom: 54px;
+
+    @include mobile {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__link {
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+}

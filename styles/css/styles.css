@@ -861,11 +861,6 @@ select {
     margin-bottom: 60px;
   }
 }
-@media (max-width: 767px) {
-  .quote {
-    padding-inline: 15px;
-  }
-}
 .quote__container {
   position: relative;
 }
@@ -948,7 +943,7 @@ select {
 }
 @media (max-width: 767px) {
   .collaboration {
-    padding-inline: 30px;
+    padding-inline: 0;
   }
 }
 .collaboration__container {
@@ -1111,6 +1106,7 @@ select {
   height: 381px;
   background: url("../../../images/sing-up-bg.jpg") center/cover no-repeat;
   padding-inline: 15px;
+  margin-bottom: 150px;
 }
 .sing-up__content {
   width: 100%;
@@ -1154,4 +1150,90 @@ select {
   .sing-up__button:active {
     background-color: #c4c4c4;
   }
+}
+
+.meet-artists {
+  margin-bottom: 100px;
+}
+@media (max-width: 1280px) {
+  .meet-artists {
+    padding-inline: 90px;
+  }
+  .meet-artists__image:first-child {
+    display: none;
+  }
+}
+@media (max-width: 1023px) {
+  .meet-artists {
+    padding-inline: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .meet-artists {
+    padding-inline: 0;
+  }
+}
+.meet-artists__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .meet-artists__container {
+    flex-direction: column;
+  }
+}
+.meet-artists__image {
+  max-width: 90%;
+  height: auto;
+  margin-right: 126px;
+}
+@media (max-width: 1280px) {
+  .meet-artists__image {
+    margin-right: 90px;
+  }
+}
+@media (max-width: 1023px) {
+  .meet-artists__image {
+    margin-right: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .meet-artists__image {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+.meet-artists__image:first-child {
+  margin-right: 40px;
+}
+.meet-artists__content {
+  max-width: 360px;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.meet-artists__title {
+  font-size: clamp(20px, 2.4305555556vw, 35px);
+  line-height: 120%;
+  margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .meet-artists__title {
+    margin-bottom: 20px;
+  }
+}
+.meet-artists__description {
+  font-size: clamp(16px, 1.25vw, 18px);
+  margin-bottom: 54px;
+}
+@media (max-width: 767px) {
+  .meet-artists__description {
+    margin-bottom: 30px;
+  }
+}
+.meet-artists__link {
+  text-transform: uppercase;
+  white-space: nowrap;
 }/*# sourceMappingURL=styles.css.map */
