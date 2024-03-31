@@ -1,0 +1,16 @@
+.input {
+  all: unset;
+  width: 100%;
+  border-bottom: var(--border);
+  padding-bottom: 5px;
+
+  &__button {
+    @include reset-button;
+    border-bottom: var(--border);
+    cursor: pointer;
+
+    @include hover {
+      background-color: #c4c4c4;
+    }
+  }
+}
