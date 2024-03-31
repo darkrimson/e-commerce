@@ -1263,6 +1263,7 @@ select {
 .follow-us__wide {
   max-width: 1920px;
   margin-inline: auto;
+  margin-bottom: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1279,4 +1280,39 @@ select {
   .follow-us__image {
     height: 200px;
   }
+}
+
+.advantages__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.advantages__item {
+  padding: 10% 30% 10% 30%;
+  border-top: var(--border);
+  border-bottom: var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 27px;
+       column-gap: 27px;
+}
+.advantages__item:not(:last-child) {
+  border-right: var(--border);
+}
+@media (min-width: 768px) {
+  .advantages__item svg {
+    flex-shrink: 0;
+  }
+}
+@media (max-width: 767px) {
+  .advantages__item svg {
+    display: none;
+  }
+}
+.advantages__title {
+  font-size: clamp(9px, 0.9027777778vw, 13px);
+  white-space: nowrap;
+  font-weight: 600;
+  line-height: 138%;
+  letter-spacing: 0.05em;
 }/*# sourceMappingURL=styles.css.map */

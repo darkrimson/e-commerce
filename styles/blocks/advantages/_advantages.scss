@@ -1,0 +1,42 @@
+.advantages {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &__item {
+    padding: 10% 30% 10% 30%;
+    border-top: var(--border);
+    border-bottom: var(--border);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 27px;
+
+    &:not(:last-child) {
+      border-right: var(--border);
+    }
+
+    @include mobile-above {
+      & svg {
+        flex-shrink: 0;
+      }
+    }
+
+    @include mobile {
+      & svg {
+        display: none;
+      }
+    }
+  }
+
+  &__title {
+    @include fluid-text(13, 9);
+
+    white-space: nowrap;
+    font-weight: 600;
+    line-height: 138%;
+    letter-spacing: 0.05em;
+  }
+}
