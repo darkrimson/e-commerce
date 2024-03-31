@@ -1,0 +1,23 @@
+.follow-us {
+    &__header {
+        padding-left: 140px;
+        margin-bottom: 35px;
+
+        @include desktop {
+            padding-left: 70px;
+        }
+
+        @include mobile {
+            padding-left: 30px;
+        }
+    }
+
+    &__title {
+        @include fluid-text(29, 24);
+        line-height: 134%;
+    }
+
+    &__description {
+        @include fluid-text(18, 16);
+    }
+}
